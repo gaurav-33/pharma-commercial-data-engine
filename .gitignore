@@ -1,0 +1,6 @@
+__pycache__/
+*.db
+JOURNAL.md
+venv
+.pytest_cache/
+data_raw/
