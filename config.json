@@ -1,0 +1,11 @@
+{
+    "paths": {
+        "raw_data": "data_raw/salesdaily.csv",
+        "clean_data": "data_clean/salesdaily_clean.csv",
+        "log_file": "logs/pipeline.log"
+    },
+    "database": {
+        "db_name": "pharma_sales.db",
+        "table_name": "daily_sales"
+    }
+}
