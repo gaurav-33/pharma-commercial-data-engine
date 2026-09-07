@@ -1,0 +1,129 @@
+{
+    "timestamp": "2026-09-17T10:53:45.141091Z",
+    "initial_rows": 16848,
+    "final_rows": 16624,
+    "total_rejected": 224,
+    "retention_percentage": 98.67,
+    "z_threshold": 3.0,
+    "iqr_multiplier": 1.5,
+    "rejection_breakdown": {
+        "Statistical Outlier (Z-Score > 3)": 224
+    },
+    "atc_profiles": {
+        "M01AB": {
+            "record_count": 2106,
+            "mean": 5.0337,
+            "std": 2.7376,
+            "median": 4.99,
+            "q25": 3.0,
+            "q75": 6.67,
+            "iqr": 3.67,
+            "lower_bound_iqr": -2.505,
+            "upper_bound_iqr": 12.175,
+            "z_threshold": 3.0,
+            "z_outliers_count": 17,
+            "iqr_outliers_count": 26
+        },
+        "M01AE": {
+            "record_count": 2106,
+            "mean": 3.8958,
+            "std": 2.1333,
+            "median": 3.67,
+            "q25": 2.34,
+            "q75": 5.138,
+            "iqr": 2.798,
+            "lower_bound_iqr": -1.857,
+            "upper_bound_iqr": 9.335,
+            "z_threshold": 3.0,
+            "z_outliers_count": 25,
+            "iqr_outliers_count": 40
+        },
+        "N02BA": {
+            "record_count": 2106,
+            "mean": 3.8804,
+            "std": 2.384,
+            "median": 3.5,
+            "q25": 2.0,
+            "q75": 5.2,
+            "iqr": 3.2,
+            "lower_bound_iqr": -2.8,
+            "upper_bound_iqr": 10.0,
+            "z_threshold": 3.0,
+            "z_outliers_count": 20,
+            "iqr_outliers_count": 31
+        },
+        "N02BE": {
+            "record_count": 2106,
+            "mean": 29.9171,
+            "std": 15.591,
+            "median": 26.9,
+            "q25": 19.0,
+            "q75": 38.3,
+            "iqr": 19.3,
+            "lower_bound_iqr": -9.95,
+            "upper_bound_iqr": 67.25,
+            "z_threshold": 3.0,
+            "z_outliers_count": 22,
+            "iqr_outliers_count": 48
+        },
+        "N05B": {
+            "record_count": 2106,
+            "mean": 8.8536,
+            "std": 5.6056,
+            "median": 8.0,
+            "q25": 5.0,
+            "q75": 12.0,
+            "iqr": 7.0,
+            "lower_bound_iqr": -5.5,
+            "upper_bound_iqr": 22.5,
+            "z_threshold": 3.0,
+            "z_outliers_count": 25,
+            "iqr_outliers_count": 48
+        },
+        "N05C": {
+            "record_count": 2106,
+            "mean": 0.5935,
+            "std": 1.093,
+            "median": 0.0,
+            "q25": 0.0,
+            "q75": 1.0,
+            "iqr": 1.0,
+            "lower_bound_iqr": -1.5,
+            "upper_bound_iqr": 2.5,
+            "z_threshold": 3.0,
+            "z_outliers_count": 46,
+            "iqr_outliers_count": 160
+        },
+        "R03": {
+            "record_count": 2106,
+            "mean": 5.5123,
+            "std": 6.4287,
+            "median": 4.0,
+            "q25": 1.0,
+            "q75": 8.0,
+            "iqr": 7.0,
+            "lower_bound_iqr": -9.5,
+            "upper_bound_iqr": 18.5,
+            "z_threshold": 3.0,
+            "z_outliers_count": 43,
+            "iqr_outliers_count": 124
+        },
+        "R06": {
+            "record_count": 2106,
+            "mean": 2.9002,
+            "std": 2.4158,
+            "median": 2.0,
+            "q25": 1.0,
+            "q75": 4.0,
+            "iqr": 3.0,
+            "lower_bound_iqr": -3.5,
+            "upper_bound_iqr": 8.5,
+            "z_threshold": 3.0,
+            "z_outliers_count": 26,
+            "iqr_outliers_count": 81
+        }
+    },
+    "audit_log": [
+        "Removed 224 records identified as statistical outliers."
+    ]
+}

@@ -1,0 +1,28 @@
+2026-09-17 16:23:44 - pipeline.warehouse - INFO - ==================================================
+2026-09-17 16:23:44 - pipeline.warehouse - INFO - STARTING MASTER PIPELINE EXECUTION
+2026-09-17 16:23:44 - pipeline.warehouse - INFO - ==================================================
+2026-09-17 16:23:44 - pipeline.warehouse - INFO - --- Phase 1: Extraction & QA ---
+2026-09-17 16:23:44 - pipeline.extractor - INFO - Extracting raw commercial data from: data_raw\salesdaily.csv
+2026-09-17 16:23:44 - pipeline.extractor - INFO - Raw data extracted successfully: 2,106 records, 13 columns
+2026-09-17 16:23:44 - pipeline.transformer - INFO - Transforming commercial data from wide to long format (unpivot)...
+2026-09-17 16:23:45 - pipeline.transformer - INFO - Transformation completed: 16,848 records generated from 2,106 raw rows.
+2026-09-17 16:23:45 - pipeline.validator - INFO - Starting statistical outlier detection & data quality audit...
+2026-09-17 16:23:45 - pipeline.validator - WARNING - Removed 224 records identified as statistical outliers.
+2026-09-17 16:23:45 - pipeline.validator - INFO - QA Audit Report Summary: Final structure: 16,624 rows, 7 columns
+2026-09-17 16:23:45 - pipeline.validator - INFO - Retention percentage: 98.67% (224 quarantined)
+2026-09-17 16:23:45 - pipeline.validator - INFO - Audit Metrics JSON generated at: logs\audit_metrics.json
+2026-09-17 16:23:45 - pipeline.validator - INFO - QA Summary JSON generated at: logs\qa_summary.json
+2026-09-17 16:23:45 - pipeline.validator - INFO - QA Rejections Report generated at: logs\qa_rejections.csv
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Clean staging file generated at: data_clean\salesdaily_clean.csv
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - --- Phase 2: SQL Database Load ---
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Initializing commercial data warehouse loading process...
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Clean staging DataFrame received (16,624 records).
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Writing data to the 'daily_sales' table (full replace load)...
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Data successfully inserted into the 'pharma_sales.db' database.
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Load QA: The 'daily_sales' table has 16,624 stored records.
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Performance indexes built using sql\indexes.sql
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - Database connection closed safely via DatabaseSession context manager.
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - --------------------------------------------------
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - ==================================================
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - MASTER PIPELINE COMPLETED SUCCESSFULLY
+2026-09-17 16:23:45 - pipeline.warehouse - INFO - ==================================================

@@ -1,0 +1,9 @@
+{
+    "initial_rows": 16848,
+    "final_rows": 16624,
+    "total_rejected": 224,
+    "retention_percentage": 98.67,
+    "audit_log": [
+        "Removed 224 records identified as statistical outliers."
+    ]
+}
