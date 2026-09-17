@@ -83,7 +83,7 @@ The engine separates business-rule anomalies from statistical distribution outli
 
 ## 📊 Advanced Commercial SQL Analytics
 
-The script [`sql/analytics.sql`](file:///e:/my_code_stuffs/pharma/pharma-sales-qa-pipeline/sql/analytics.sql) contains production analytical queries leveraging Common Table Expressions (CTEs) and Window Functions:
+The script [`sql/analytics.sql`](sql/analytics.sql) contains production analytical queries leveraging Common Table Expressions (CTEs) and Window Functions:
 
 ### 1. Category Market Share % Over Time
 Computes the monthly market volume for each ATC code and calculates its share against the total pharmaceutical volume for that month:
